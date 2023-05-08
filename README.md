@@ -8,7 +8,14 @@ pip install requirements.txt
 ```
 
 ## Datasets
-We have referenced our data from the Morpheme Segmentation 2022 Shared Task contributed by Barsuren, Peters, and Nicolai. They achieved word and sentence morpheme segmentation for eight different languages.
+We have referenced our data from the Morpheme Segmentation 2022 Shared Task contributed by Barsuren, Peters, and Nicolai. They achieved word and sentence morpheme segmentation for eight different languages. This is how the data look like:
+umrahs	umrah@@s
+acetary	acetary
+abogados	abogado@@s
+ganch	ganch
+swirl	swirl
+uninfused	un@@infuse@@ed<img width="219" alt="image" src="https://user-images.githubusercontent.com/114301106/236910725-1406d18b-54cc-49f1-9fd7-22934acb9851.png">
+
 
 ## Models
 The layers system in our model consists of two main components: the BasicNeuralTagger and the BertMorphemeLetterModel. These components are designed to tackle different tasks and exhibit distinct layer configurations.
