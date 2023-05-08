@@ -24,11 +24,15 @@ The layers system in our model consists of two main components: the BasicNeuralT
 ### Train the basic model
 ```shell
 # Train a basic model on English
-python main.py -c config/basic.json -t data/eng.train -d data/eng.dev -s "@@"
+python main.py -c config/basic.json -t data/eng.train.tsv -d data/eng.dev -s "@@"
+# if you want to use cpu but not cuda
+python main.py -c config/basic.json -t data/eng.train.tsv -d data/eng.dev -s "@@" -D cpu
 ```
 ### Train the bert-enhanced model
 ```shell
 # Train a multilingual BERT model on English
-python main.py -c config/bert_multi.json -t data/eng.train -d data/eng.dev -s "@@"
+python main.py -c config/bert_multi.json -t data/eng.train.tsv -d data/eng.dev -s "@@"
+# if you want to use cpu but not cuda
+python main.py -c config/bert_multi.json -t data/eng.train.tsv -d data/eng.dev -s "@@" -D cpu
 ```
 
