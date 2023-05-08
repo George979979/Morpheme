@@ -30,7 +30,7 @@ python main.py -c config/basic.json -t data/eng.train.tsv -d data/eng.dev -s "@@
 ```
 ### Train the bert-enhanced model
 ```shell
-# Train a multilingual BERT model on English
+# Train a BERT model on English
 python main.py -c config/eng/bert.json -t data/eng.train.tsv -d data/eng.dev -s "@@"
 # if you want to use cpu but not cuda
 python main.py -c config/eng/bert.json -t data/eng.train.tsv -d data/eng.dev -s "@@" -D cpu
